@@ -25,4 +25,4 @@
       shell: docker build -t rapido-webapp:latest /opt/rapido-app
 
     - name: Run Docker container
-      shell: docker run -d --name rapido-container -p 8000:80 rapido-webapp:latest
+      shell: docker run -d --name rapido-container -p 80:8080 rapido-webapp:latest
